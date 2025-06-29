@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "consume_item",
+        "conditions": {
+          "item": {
+            "components": {
+                "item_name": "The Staff of Atara"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "tfh:atarastaff"
+    }
+  }
+  

@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:cocoa_beans"
+    ],
+    [
+      "minecraft:glass_bottle"
+    ],
+    [
+      "minecraft:oak_leaves",
+      "minecraft:acacia_leaves",
+      "minecraft:spruce_leaves",
+      "minecraft:birch_leaves",
+      "minecraft:azalea_leaves",
+      "minecraft:cherry_leaves",
+      "minecraft:dark_oak_leaves",
+      "minecraft:flowering_azalea_leaves",
+      "minecraft:jungle_leaves",
+      "minecraft:mangrove_leaves",
+      "minecraft:pale_oak_leaves"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:consumable": {
+        "consume_seconds": 2,
+        "animation": "drink",
+        "sound": "minecraft:entity.generic.drink",
+        "has_consume_particles": false,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:clear_all_effects"
+          }
+        ]
+      },
+      "minecraft:item_name": "Tea",
+      "minecraft:lore": [
+        "Drink this to remove all effects!"
+      ],
+      "minecraft:custom_model_data": {
+        "floats": [
+          11
+        ]
+      }
+    },
+    "count": 1
+  }
+}

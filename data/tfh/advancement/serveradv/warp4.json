@@ -1,0 +1,50 @@
+{
+  "display": {
+      "title": {
+          "text": "Oceanside View"
+      },
+      "description": {
+          "text": "This is Selachia. Its lighthouse shines the way for many miles."
+      },
+      "icon": {
+          "id": "minecraft:redstone_lamp"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "position": {
+                      "x": {
+                        "min": 975,
+                        "max": 1024
+                      },
+                      "z": {
+                        "min": 310,
+                        "max": 358
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "tfh:serveradv/warp3"
+}

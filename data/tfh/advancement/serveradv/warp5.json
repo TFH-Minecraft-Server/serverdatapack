@@ -1,0 +1,50 @@
+{
+  "display": {
+      "title": {
+          "text": "The Winter Turtle"
+      },
+      "description": {
+          "text": "This is Chelonia. Named after its turtle-shaped biome"
+      },
+      "icon": {
+          "id": "minecraft:snow_block"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "position": {
+                      "x": {
+                        "min": 319,
+                        "max": 402
+                      },
+                      "z": {
+                        "min": -1126,
+                        "max": -1033
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "tfh:serveradv/warp4"
+}

@@ -1,0 +1,40 @@
+{
+  "display": {
+      "title": {
+          "text": "Horsing Around"
+      },
+      "description": {
+          "text": "Ride a horse 10,000 Kilometers"
+      },
+      "icon": {
+          "id": "minecraft:saddle"
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+      "playtime": {
+          "trigger": "minecraft:tick",
+          "conditions": {
+            "player": {
+              "type_specific": {
+                "type": "minecraft:player",
+                "stats": [
+                  {
+                    "type": "minecraft:custom",
+                    "stat": "horse_one_cm",
+                    "value": {
+                      "min": 1000000000,
+                      "max": 1000000001
+                    }
+                  }
+                ]
+              }
+            }
+          }
+      }
+  },
+  "parent": "tfh:serveradv/advroot"
+}

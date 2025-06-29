@@ -1,0 +1,1 @@
+give @p gold_nugget[item_name='{"bold":true,"color":"blue","text":"Allaycoin"}',lore=['"Use these at a Casino!"'],custom_model_data={floats:[1]}] 64

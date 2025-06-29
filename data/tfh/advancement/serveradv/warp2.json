@@ -1,0 +1,50 @@
+{
+  "display": {
+      "title": {
+          "text": "The Fort"
+      },
+      "description": {
+          "text": "Welcome to Penn, the last stronghold of armies led by one known as Penny."
+      },
+      "icon": {
+          "id": "minecraft:diamond_sword"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "position": {
+                      "x": {
+                        "min": -628,
+                        "max": -578
+                      },
+                      "z": {
+                        "min": 7,
+                        "max": 58
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "tfh:serveradv/warp1"
+}

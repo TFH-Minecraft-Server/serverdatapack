@@ -1,0 +1,40 @@
+{
+  "display": {
+      "title": {
+          "text": "Mermaid"
+      },
+      "description": {
+          "text": "Swim 100km"
+      },
+      "icon": {
+          "id": "minecraft:tropical_fish"
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+      "playtime": {
+          "trigger": "minecraft:tick",
+          "conditions": {
+            "player": {
+              "type_specific": {
+                "type": "minecraft:player",
+                "stats": [
+                  {
+                    "type": "custom",
+                    "stat": "swim_one_cm",
+                    "value": {
+                      "min": 10000000,
+                      "max": 100000000000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+      }
+  },
+  "parent": "tfh:serveradv/wanderer"
+}

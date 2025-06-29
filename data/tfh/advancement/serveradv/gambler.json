@@ -1,0 +1,36 @@
+{
+  "display": {
+      "title": {
+          "text": "Let's Go Gambling!"
+      },
+      "description": {
+          "text": "Aw dangit. Hold an Allaycoin for the first time"
+      },
+      "icon": {
+        "id": "gold_nugget",
+        "components": {
+          "minecraft:custom_model_data": {"floats": [1]}
+        }
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:gold_nugget",
+						"components": {
+							"minecraft:custom_model_data": {"floats": [1]}
+						}
+					}
+				]
+			}
+		}
+	},
+  "parent": "tfh:serveradv/grow"
+}

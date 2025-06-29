@@ -1,0 +1,23 @@
+{
+  "display": {
+      "title": {
+          "text": "Hide and Seek Master!"
+      },
+      "description": {
+          "text": "Hide for over 4 hours in all games of Hide and Seek!"
+      },
+      "icon": {
+          "id": "minecraft:clock"
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+      "playtime": {
+          "trigger": "minecraft:impossible"
+      }
+  },
+  "parent": "tfh:serveradv/event"
+}

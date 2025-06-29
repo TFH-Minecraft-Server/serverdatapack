@@ -1,0 +1,47 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+	  [
+		"minecraft:cocoa_beans"
+	  ],
+	  [
+		"minecraft:glass_bottle"
+	  ],
+	  [
+		"minecraft:slime_ball"
+	  ]
+	],
+	"result": {
+	  "id": "minecraft:paper",
+	  "components": {
+		"minecraft:consumable": {
+		  "consume_seconds": 2,
+		  "animation": "drink",
+		  "sound": "minecraft:entity.generic.drink",
+		  "has_consume_particles": false,
+		  "on_consume_effects": [
+			{
+			  "type": "minecraft:apply_effects",
+			  "effects": [
+				{
+				  "id": "minecraft:jump_boost",
+				  "amplifier": 1,
+				  "duration": 400,
+				  "show_particles": true,
+				  "show_icon": true
+				}
+			  ]
+			}
+		  ]
+		},
+		"max_stack_size": 1,
+		"minecraft:item_name": "Latte",
+		"minecraft:lore": [
+		  "Drink this for a bouncy effect!"
+		],
+		"minecraft:custom_model_data": {"floats": [9]}
+	  },
+	  "count": 1
+	}
+  }
