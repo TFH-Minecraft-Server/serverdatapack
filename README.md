@@ -1,0 +1,2 @@
+# serverdatapack
+Main server datapack
