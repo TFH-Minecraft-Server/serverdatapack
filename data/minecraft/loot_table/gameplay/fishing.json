@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gold_nugget",
+          "weight": 2,
+          "quality": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Summer Party Token",
+                "color": "blue",
+                "bold": true
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                      "x": {
+                        "min": -6,
+                        "max": 93
+                      },
+                      "y": {
+                        "min": 50,
+                        "max": 80
+                      },
+                      "z": {
+                        "min": -473,
+                        "max": -393
+                      }
+                    },
+                    "dimension": "minecraft:overworld"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "floats": {
+                "values": [
+                  2
+                ],
+                "mode": "append"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": -2,
+          "value": "minecraft:gameplay/fishing/junk",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:fishing_hook",
+                  "in_open_water": true
+                }
+              }
+            }
+          ],
+          "quality": 2,
+          "value": "minecraft:gameplay/fishing/treasure",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": -1,
+          "value": "minecraft:gameplay/fishing/fish",
+          "weight": 85
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/fishing"
+}
