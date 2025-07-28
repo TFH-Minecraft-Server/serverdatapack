@@ -17,28 +17,7 @@
                 "color": "blue",
                 "bold": true
               },
-              "conditions": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "position": {
-                      "x": {
-                        "min": -6,
-                        "max": 93
-                      },
-                      "y": {
-                        "min": 50,
-                        "max": 80
-                      },
-                      "z": {
-                        "min": -473,
-                        "max": -393
-                      }
-                    },
-                    "dimension": "minecraft:overworld"
-                  }
-                }
-              ]
+              "target": "item_name"
             },
             {
               "function": "minecraft:set_custom_model_data",
@@ -47,6 +26,26 @@
                   2
                 ],
                 "mode": "append"
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                  "x": {
+                    "min": -6,
+                    "max": 93
+                  },
+                  "y": {
+                    "min": 50,
+                    "max": 80
+                  },
+                  "z": {
+                    "max": -393
+                  }
+                }
               }
             }
           ]
