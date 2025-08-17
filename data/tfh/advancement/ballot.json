@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:paper",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            39
+          ]
+        }
+      }
+    },
+    "title": "Vote for Mayor!",
+    "description": "Vote for mayor at the Community Center!",
+    "background": "minecraft:block/gold_block",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "ballot": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "stats": [
+              {
+                "type": "minecraft:custom",
+                "stat": "minecraft:play_time",
+                "value": {
+                  "min": 1,
+                  "max": 630720000
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tfh:election/ballot"
+  }
+}
